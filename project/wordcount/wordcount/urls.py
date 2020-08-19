@@ -16,11 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from wcount import views
+from django.conf.urls import include , url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/',views.home,name='home'),
     path('about/',views.about,name='about'),
     path('hobbies/',views.hobbies,name='hobbies'),
+    url(r'blogs.*/',include('blogs.urls')),
+    url(r'mycontacts.*/',include('mycontacts.urls')),
+
     
 ]
