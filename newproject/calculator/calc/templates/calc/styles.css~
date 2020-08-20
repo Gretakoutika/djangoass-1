@@ -1,0 +1,10 @@
+h1{	margin:30px;
+	text-align: center;
+	text-shadow: transparent;
+}
+p{	
+	font-size: 30%;
+}
+button{
+	size: 30%;
+}
